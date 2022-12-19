@@ -37,6 +37,54 @@ Matriks merupakan kumpulan-kumpulan bilangan yang disusun secara baris (vertikal
           }
           return 0;
         }
+        
+        
+        
+        #include <iostream>
+        #include <iomanip>
+        using namespace std;
+        int main(){
+            int arr[100][100], jumlahBaris, jumlahKolom, i, j, baris, kolom;
+
+            cout<<"Input jumlah baris: "; cin>>jumlahBaris;
+            cout<<"Input jumlah kolom: "; cin>>jumlahKolom;
+            cout << endl;
+
+            for(i = 0; i < jumlahBaris; i++){
+                for(j = 0; j < jumlahKolom; j++){
+                    cout << "Baris " <<i+1<<", kolom "<<j+1<< " = ";
+                    cin >> arr[i][j];
+                }
+                cout << endl;
+            }
+
+            cout << "Hasil matriks: " << endl;
+
+            for(i = 0; i < jumlahBaris ; i++){
+            for(j = 0; j < jumlahKolom; j++){
+                cout << setw(3) << arr[i][j] << " ";
+            }
+            cout << endl;
+            }
+
+            cout << "\nHasil habis di bagi 3 5 7 adalah : " << endl;
+
+            for(i = 0; i < jumlahBaris ; i++){
+            for(j = 0; j < jumlahKolom; j++){
+                if(arr[i][j] % 3 == 0 || arr[i][j] % 5 == 0 || arr[i][j] % 7 == 0){
+                cout << setw(3) << arr[i][j] << " ";
+                }
+            }
+            cout << endl;
+            }
+
+
+            cout << endl;
+            return 0;
+        }
+        
+        
+
 
 
 ## output 
@@ -55,6 +103,37 @@ Hasil Transpose Matriks:
 
 --------------------------------
 Process exited after 13.08 seconds with return value 0
+Press any key to continue . . .
+
+
+Input jumlah baris: 3
+Input jumlah kolom: 3
+
+Baris 1, kolom 1 = 1
+Baris 1, kolom 2 = 2
+Baris 1, kolom 3 = 3
+
+Baris 2, kolom 1 = 4
+Baris 2, kolom 2 = 5
+Baris 2, kolom 3 = 6
+
+Baris 3, kolom 1 = 7
+Baris 3, kolom 2 = 8
+Baris 3, kolom 3 = 9
+
+Hasil matriks:
+  1   2   3
+  4   5   6
+  7   8   9
+
+Hasil habis di bagi 3 5 7 adalah :
+  3
+  5   6
+  7   9
+
+
+--------------------------------
+Process exited after 16.51 seconds with return value 0
 Press any key to continue . . .
   
   

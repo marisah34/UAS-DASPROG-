@@ -1,4 +1,4 @@
-# UAS-DASPROG-
+# UJIAN AKHIR SEMESTER 
 <br>Mata Kuliah : Dasar Pemrograman 
 <br> Nama : Marisah Lofiana 
 <br> NIM : 1227050068
